@@ -1,7 +1,8 @@
 <script>
   export let radius
+  export let strokeWidth
   export let stroke
-  export let color
+  export let data
 
   let width = 500;
   let height = 500;
@@ -10,5 +11,14 @@
 <svelte:window bind:innerWidth={width} bind:innerHeight={height} />
 
 <svg {width} {height}>
-  <circle cx={width / 2} cy={height / 2} r={radius} fill={color} stroke="black" stroke-width={stroke}></circle>
+  {#each data.data as bubble}
+    <circle
+      cx={bubble.x * width / 100}
+      cy={height - bubble.y * height / 100}
+      r={radius}
+      fill={bubble.fill}
+      stroke={stroke}
+      stroke-width={strokeWidth}
+      ></circle>
+  {/each}
 </svg>

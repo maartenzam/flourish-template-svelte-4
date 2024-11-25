@@ -33,20 +33,40 @@ settings:
   # • "boolean" >> gives a checkbox
   # • "color" >> gives a color picker
 
-  - Circle # Headings can be used to break up the settings into collapsible sections
+  - Circles # Headings can be used to break up the settings into collapsible sections
   - property: radius
     name: Radius
     type: number
-    description: The radius of the circle
+    description: The radius of the circles
+  - property: strokeWidth
+    name: Stroke width
+    type: number
+    description: 'The thickness of the circles border'
   - property: stroke
     name: Stroke
-    description: 'The thickness of the circle’s border, between 0 and 5'
-    type: number
-  - property: color
-    name: Color
-    description: The color of the circle
     type: color
+    description: The stroke color of the circles
 
 data:
   # The data section determines how data is made available to your template,
   # and the sample data that is used. See the documentation.
+  - key: label # Property name in the dataset
+    name: Fruit # Name to be displayed in the editor
+    dataset: data # Name of dataset
+    type: column # Are we selecting a single or multiple columns
+    column: "Data::A" # Which column should be selected 
+  - key: x
+    name: X
+    dataset: data
+    type: column
+    column: "Data::B"
+  - key: y
+    name: Y
+    dataset: data
+    type: column
+    column: "Data::C"
+  - key: fill
+    name: Fill
+    dataset: data
+    type: column
+    column: "Data::D"
