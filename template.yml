@@ -33,7 +33,7 @@ settings:
   # • "boolean" >> gives a checkbox
   # • "color" >> gives a color picker
 
-  - Viz Title # Headings can be used to break up the settings into collapsible sections
+  - Circle # Headings can be used to break up the settings into collapsible sections
   - property: radius
     name: Radius
     type: number

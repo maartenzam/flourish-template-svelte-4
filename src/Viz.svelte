@@ -3,7 +3,7 @@
   export let stroke
   export let color
 
-  let width = 500; // Default values
+  let width = 500;
   let height = 500;
 </script>
 
