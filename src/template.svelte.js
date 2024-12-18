@@ -10,6 +10,11 @@ export var state = {
 	stroke: "#000000"
 };
 
+var font_link = document.createElement("link");
+font_link.setAttribute("rel", "stylesheet");
+document.body.appendChild(font_link);
+font_link.setAttribute("href", window.Flourish.static_prefix + "/style.css");
+
 let viz
 
 // The draw function is called when the template first loads

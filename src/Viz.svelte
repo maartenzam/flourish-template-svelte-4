@@ -22,3 +22,9 @@
       ></circle>
   {/each}
 </svg>
+
+<style>
+  svg {
+    overflow: hidden;
+  }
+</style>
