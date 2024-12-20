@@ -10,10 +10,23 @@ export var state = {
 	stroke: "#000000"
 };
 
+// Add the generated css file to index.html
 var font_link = document.createElement("link");
 font_link.setAttribute("rel", "stylesheet");
 document.body.appendChild(font_link);
 font_link.setAttribute("href", window.Flourish.static_prefix + "/style.css");
+
+// WB viz style guide typography css
+var typograph_link = document.createElement("link");
+typograph_link.setAttribute("rel", "stylesheet");
+document.body.appendChild(typograph_link);
+typograph_link.setAttribute("href", window.Flourish.static_prefix + "/typography.css");
+
+// WB viz style guide colors css
+var colors_link = document.createElement("link");
+colors_link.setAttribute("rel", "stylesheet");
+document.body.appendChild(colors_link);
+colors_link.setAttribute("href", window.Flourish.static_prefix + "/colors.css");
 
 let viz
 
