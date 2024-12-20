@@ -35,9 +35,9 @@ body {
 	--space-m-xl: 21px;
 
 	/* font sizes and spacing for large charts: width >700px */
-	--font-size-m-s: 14px;
-	--font-size-m-m: 16px;
-	--font-size-m-l: 20px;
+	--font-size-l-s: 14px;
+	--font-size-l-m: 16px;
+	--font-size-l-l: 20px;
 
 	--space-l-xxs: 4px;
 	--space-l-xs: 8px;
